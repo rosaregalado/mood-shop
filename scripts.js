@@ -78,6 +78,13 @@ function showItems() {
   cartTotal.innerHTML = `Total in cart: $${getTotal()}`;
 }
 
+const all_items_button = Array.from(document.querySelectorAll("button"));
+// add event listener to add clicked item to the shopping cart
+all_items_button.forEach(elt => elt.addEventListener('click', () => {
+  addItem(elt.getAttribute('id'), elt.getAttribute('data-price'))
+  showItems()
+}))
+
 //get qty
 function getQty() {
   // set initial qty to zero
