@@ -58,3 +58,16 @@ body {
   background-color: white;
   color: black;
 }
+footer {
+  padding: 50px;
+  border: solid blue 10px;
+  font-size: 25px;
+}
+#add-form input {
+  font-size: 20px;
+}
+button {
+  background-color: yellow;
+  font-size: 15px;
+}
+
