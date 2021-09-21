@@ -8,16 +8,53 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: rgb(61, 216, 216);
+  background-color: rgb(167,217,232);
+  font-size: 25px;
+  height: 130px;
 }
 .page-header ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  padding: 15px;
 }
 .page-header a {
   display: block;
   padding: 0.5em;
   text-decoration: none;
+}
+.page-header h4 {
+  padding: 15px;
+  font-size: 30px;
+}
+.items {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  justify-content: center;
+  padding: 30px;
+}
+.items img {
+  width: 100%;
+  height: auto;
+}
+.items p:nth-child(2) {
+  font-size: 20px;
+
+}
+.items button {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  border: black 3px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+.items button:hover {
+  background-color: white;
+  color: black;
 }
